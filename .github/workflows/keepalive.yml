@@ -33,6 +33,7 @@ jobs:
       - name: Run AFK bot (capped ~4h57m)
         run: npm start
         env:
-          MC_HOST: indomc-lifesteal.play.hosting
-          MC_PORT: "25777"
+          MC_HOST: upland-fairground.play.hosting
+          MC_PORT: "25794"
           MC_USERNAME: AterBot
+

@@ -1,7 +1,7 @@
 {
 	"client": {
-		"host": "indomc-lifesteal.play.hosting",
-		"port": 25777,
+		"host": "upland-fairground.play.hosting",
+		"port": 25794,
 		"username": "AterBot",
 		"version": "auto"
 	},
@@ -14,3 +14,4 @@
 		"retryDelay": 15000
 	}
 }
+
