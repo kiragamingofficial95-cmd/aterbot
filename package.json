@@ -12,11 +12,11 @@
 
 	"scripts": {
 		"start": "tsx ./src/index.ts",
-		"dev": "node --inspect --loader tsx ./src/index.ts",
-		"postinstall": "node ./scripts/patch-mineflayer.cjs"
+		"dev": "node --inspect --loader tsx ./src/index.ts"
 	},
 
 	"engines": {
 		"node": ">=22"
 	}
 }
+

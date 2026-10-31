@@ -9,8 +9,8 @@
 	"! DO NOT EDIT BELOW !": "ONLY IF YOU KNOW WHAT YOU ARE DOING",
 	"logLevel": ["error", "log", "debug"],
 	"action": {
-		"commands": ["forward", "back", "left", "right", "jump"],
-		"holdDuration": 5000,
+		"commands": ["forward", "back", "left", "right"],
+		"holdDuration": 8000,
 		"retryDelay": 15000
 	}
 }

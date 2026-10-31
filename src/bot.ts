@@ -51,15 +51,16 @@ const createBot = (): void => {
 		console.log(`AFKBot spawned on ${HOST}:${PORT} — send time counting on the dashboard.\n`);
 		const changePos = async (): Promise<void> => {
 			const lastAction = getRandom(CONFIG.action.commands) as Mineflayer.ControlState;
-			const halfChance: boolean = Math.random() < 0.5? true : false; // 50% chance to sprint
+			const halfChance = false; // sprint disabled: Paper's "moved wrongly" check trips on sprint bursts
 
 			console.debug(`${lastAction}${halfChance? " with sprinting" : ''}`);
 
-			bot.setControlState('sprint', halfChance);
+			bot.setControlState('sprint', false);
 			bot.setControlState(lastAction, true); // starts the selected random action
 
-			await sleep(CONFIG.action.holdDuration);
+			await sleep(2000);
 			bot.clearControlStates();
+			await sleep(Math.max(1000, CONFIG.action.holdDuration - 2000));
 			return;
 		};
 		const changeView = async (): Promise<void> => {
