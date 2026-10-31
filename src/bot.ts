@@ -1,6 +1,6 @@
 import Mineflayer from 'mineflayer';
 import { sleep, getRandom } from "./utils.ts";
-import CONFIG from "../config.json" assert {type: 'json'};
+import CONFIG from "../config.json" with { type: 'json' };
 import { onLogin, onLogout, markReconnect, setStatus } from "./state.ts";
 
 // Environment variables (useful for Railway) override config.json

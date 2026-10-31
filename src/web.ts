@@ -1,6 +1,6 @@
 import HTTP from 'node:http';
 import { getStats } from "./state.ts";
-import CONFIG from "../config.json" assert {type: 'json'};
+import CONFIG from "../config.json" with { type: 'json' };
 
 const PORT = +(process.env.PORT || 5500);
 
