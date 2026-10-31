@@ -70,10 +70,10 @@ const createBot = (): void => {
 			return;
 		};
 
-		loop = setInterval(() => {
-			changeView();
-			changePos();
-		}, CONFIG.action.holdDuration);
+	loop = setInterval(() => {
+		changeView();
+		changePos();
+	}, CONFIG.action.holdDuration);
 	});
 	bot.once('login', () => {
 		console.log(`AFKBot logged in ${bot.username}\n\n`);
