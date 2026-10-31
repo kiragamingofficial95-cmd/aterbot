@@ -1,0 +1,14 @@
+# Render blueprint — deploys AterBot as a web service (serves the uptime dashboard)
+services:
+  - type: web
+    name: aterbot
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: MC_HOST
+        value: indomc-lifesteal.play.hosting
+      - key: MC_PORT
+        value: "25777"
+    healthCheckPath: /api/stats
