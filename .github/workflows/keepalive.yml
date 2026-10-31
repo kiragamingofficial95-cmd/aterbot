@@ -34,6 +34,7 @@ jobs:
         run: npm start
         env:
           MC_HOST: upland-fairground.play.hosting
-          MC_PORT: "25794"
+          MC_PORT: "25565"
           MC_USERNAME: AterBot
+
 

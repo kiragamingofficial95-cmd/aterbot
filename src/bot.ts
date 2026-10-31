@@ -42,7 +42,7 @@ const createBot = (): void => {
 		console.error(`AFKBot got an error: ${error}`);
 	});
 	bot.once('kicked', rawResponse => {
-		console.error(`\n\nAFKbot is disconnected: ${rawResponse}`);
+		console.error(`\n\nAFKbot is disconnected: ${typeof rawResponse === "string" ? rawResponse : JSON.stringify(rawResponse, null, 2)}`);
 	});
 	bot.once('end', () => void reconnect());
 

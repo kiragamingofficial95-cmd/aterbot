@@ -1,7 +1,7 @@
 {
 	"client": {
 		"host": "upland-fairground.play.hosting",
-		"port": 25794,
+		"port": 25565,
 		"username": "AterBot",
 		"version": "auto"
 	},
@@ -14,4 +14,5 @@
 		"retryDelay": 15000
 	}
 }
+
 
